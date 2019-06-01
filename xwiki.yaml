@@ -1,0 +1,5 @@
+---
+- hosts: xwiki_servers
+  become: true 
+  roles:
+    - xwiki

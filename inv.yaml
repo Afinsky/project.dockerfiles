@@ -1,0 +1,10 @@
+all_host:
+  children:
+    xwiki_servers:
+      hosts:
+        local_cent:
+          ansible_host: 192.168.0.240
+        local_cent2: 
+          ansible_host: 192.168.0.242
+    
+      

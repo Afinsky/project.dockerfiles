@@ -1,0 +1,40 @@
+---
+yum_tomcat_packages:
+  - java
+  - wget
+  - vim
+  - MySQL-python
+#  - mysql-devel
+#  - python-devel
+#  - python-pip
+  - mariadb-server
+  - mariadb
+  - mysql-connector-java
+
+
+# / !!!
+tomcat_home_directory: "/opt/tomcat"
+tomcat_user: tomcat
+symlink_name: latest
+
+version_tomcat: "apache-tomcat-9.0.20"
+folder_tomcat_download: "/tmp/tomcat/"
+tomcat_download_link: "http://www-eu.apache.org/dist/tomcat/tomcat-9/v9.0.20/bin/{{ version_tomcat }}.tar.gz"
+
+path_to_mysql_connector: "/usr/share/java/mysql-connector-java.jar"
+
+xwiki_db_host: localhost
+xwiki_db_user: xwikiuser
+xwiki_db_name: xwiki
+xwiki_db_pass: new_password_here
+
+superadmin_pass: system
+
+xwiki_war_url: "http://nexus.xwiki.org/nexus/content/groups/public/org/xwiki/platform/xwiki-platform-distribution-war/10.11.8/xwiki-platform-distribution-war-10.11.8.war"
+
+
+# /opt/tomcat/latest/conf/tomcat-users.xml    username and password
+tomcat_users_username: admin
+tomcat_users_password: admin_password
+
+server_xml_encoding: URIEncoding="UTF-8"
